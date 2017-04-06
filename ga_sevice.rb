@@ -62,5 +62,6 @@ class GoogleAnalyticsService
 		end
 		analytics
 	end
+
 end
 
