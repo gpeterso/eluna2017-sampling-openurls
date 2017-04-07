@@ -1,5 +1,5 @@
 # Sampling OpenURLs from Primo+Alma
-Details on how we capture and sample OpenURL access events as described at our [ELUNA 2017 presentation](https://elunaannualmeeting2017.sched.com/event/AKlT/testing-identifying-and-classifying-openurl-access-problems)
+Details on how we capture and sample OpenURL access events as described in our [ELUNA 2017 presentation](https://elunaannualmeeting2017.sched.com/event/AKlT/testing-identifying-and-classifying-openurl-access-problems)
 
 ## Capturing OpenURLs
 1. If you haven't already done so, [set up Google Analytics](https://support.google.com/analytics/answer/1008080?hl=en) for your Primo site. 
