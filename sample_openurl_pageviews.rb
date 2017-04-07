@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # Fetch N random OpenURL page views for a given day
 # Usage (get 20 random page views from Jan 1 2017): 
-#   get_sp_pageviews.rb 2017-01-01 20
+#   sample_openurl_pageviews.rb 2017-01-01 20
 #
 require './ga_sevice.rb'
 require 'yaml'
