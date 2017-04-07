@@ -1,9 +1,9 @@
-#Sampling OpenURLs from Primo+Alma
+# Sampling OpenURLs from Primo+Alma
 Details on how we capture and sample OpenURL access events as described at our [ELUNA 2017 presentation](https://elunaannualmeeting2017.sched.com/event/AKlT/testing-identifying-and-classifying-openurl-access-problems)
 
-##Capturing OpenURLs
+## Capturing OpenURLs
 1. If you haven't already done so, [set up Google Analytics](https://support.google.com/analytics/answer/1008080?hl=en) for your Primo site. 
-2. Make sure you have something like the following in your footer file. This will provide you with page view tracking in Google Analytics. 
+1. Make sure you have something like the following in your footer file. This will provide you with page view tracking in Google Analytics. 
 
 ```html
 <script>
@@ -17,7 +17,7 @@ Details on how we capture and sample OpenURL access events as described at our [
   ga('set', 'anonymizeIp', true);
 </script>
 ```
-3. Optionally, if you want to track any time someone looks at an Alma Resolver menu as a [custom event](https://developers.google.com/analytics/devguides/collection/analyticsjs/events), you can add the following JavaScript: 
+1. Optionally, if you want to track any time someone looks at an Alma Resolver menu as a [custom event](https://developers.google.com/analytics/devguides/collection/analyticsjs/events), you can add the following JavaScript: 
 
 ```javascript
 (function() {
@@ -52,16 +52,16 @@ Details on how we capture and sample OpenURL access events as described at our [
     }
   });
 })();
-````
+```
 
 This will capture the Alma Resolver OpenURL for any "View It" or "Get It" tab that a user views.  
 
-##Sampling OpenUrls
+## Sampling OpenUrls
 1. Clone this repository.
-2. Make sure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and [Bundler](http://bundler.io/) installed.
-3. Follow the "setup athentication" instuctions [here](https://github.com/google/google-api-ruby-client-samples/tree/master/service_account#setup-authentication) to configure access to the Google Analytics API.
-4. Run `bundle install`
-5. To randomly sample OpenURL page views for a given day, run `bundle exec ./sample_openurl_pageviews.rb <date> <number>`. For example, run `bundle exec ./sample_openurl_pageviews.rb 2017-04-01 10` to sample ten page views from April 1st, 2017.
-6. Similarly, run `bundle exec ./sample_viewit_events.rb <date> <number>` to randomply sample "View It" events for a given day. 
+1. Make sure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and [Bundler](http://bundler.io/) installed.
+1. Follow the "setup authentication" instructions [here](https://github.com/google/google-api-ruby-client-samples/tree/master/service_account#setup-authentication) to configure access to the Google Analytics API.
+1. Run `bundle install`
+1. To randomly sample OpenURL page views for a given day, run `bundle exec ./sample_openurl_pageviews.rb <date> <number>`. For example, run `bundle exec ./sample_openurl_pageviews.rb 2017-04-01 10` to sample ten page views from April 1st, 2017.
+1. Similarly, run `bundle exec ./sample_viewit_events.rb <date> <number>` to randomly sample "View It" events for a given day. 
 
  
