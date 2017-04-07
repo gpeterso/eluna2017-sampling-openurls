@@ -4,7 +4,6 @@ Details on how we capture and sample OpenURL access events as described at our [
 ## Capturing OpenURLs
 1. If you haven't already done so, [set up Google Analytics](https://support.google.com/analytics/answer/1008080?hl=en) for your Primo site. 
 1. Make sure you have something like the following in your footer file. This will provide you with page view tracking in Google Analytics. 
-
 ```html
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -18,7 +17,6 @@ Details on how we capture and sample OpenURL access events as described at our [
 </script>
 ```
 1. Optionally, if you want to track any time someone looks at an Alma Resolver menu as a [custom event](https://developers.google.com/analytics/devguides/collection/analyticsjs/events), you can add the following JavaScript: 
-
 ```javascript
 (function() {
   var sent = [];
